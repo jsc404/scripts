@@ -16,8 +16,8 @@ for ((i=1; i<=MAX_RETRIES; i++)); do
     echo "Waiting for IP assignment (attempt $i/$MAX_RETRIES)..."
     sleep $DELAY
   else
-    echo "${IP_ADDRESS}"  # Output just the IP itself
-    exit 0  # Success!
+    echo "${IP_ADDRESS}"
+    exit 0
   fi
 done
 

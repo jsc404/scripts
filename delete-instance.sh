@@ -18,7 +18,6 @@ fi
 echo "Deleting VM ${VM_NAME}..."
 virsh undefine ${VM_NAME} 
 
-# Optional: Delete disk image (be careful with this!)
 RM_DISK_IMAGE=true
 if [[ $RM_DISK_IMAGE == true ]]; then
   DISK_PATH="/var/lib/libvirt/images/$VM_NAME.qcow2"
